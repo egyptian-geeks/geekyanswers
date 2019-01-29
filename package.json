@@ -1,0 +1,23 @@
+{
+  "name": "gexecuses",
+  "version": "1.0.0",
+  "description": "Geeks Execuses!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1 -p 9092",
+    "serve": "firebase serve --port 8082"
+  },
+  "keywords": [
+    "Geeks",
+    "Developers",
+    "DevOps",
+    "Jokes"
+  ],
+  "author": "Mohamed A. Hassan <malaa83@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "firebase": "^5.5.9",
+    "http-server": "^0.10.0"
+  }
+}

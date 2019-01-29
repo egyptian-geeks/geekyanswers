@@ -1,0 +1,285 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Geeky Answers</title>
+    <meta name="description" content="Someone reported a in production after deployment & boss is angry? No problem, We Got Ya!">
+    <link rel="me" href="https://twitter.com/MohammedAlaa">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <style media="">
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background: #202932;
+        font-family: "Arimo", sans-serif;
+        color: #889BB0;
+      }
+      .body-wrap {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      h1 {
+        color: #889BB0;
+        margin-bottom: 16px;
+        font-size: 42px;
+        line-height: 52px;
+        letter-spacing: -0.1px;
+        margin-top: 10%;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .lead {
+        margin-bottom: 40px;
+        padding-left: 72px;
+        padding-right: 72px;
+      }
+      .container-sm {
+        max-width: 848px;
+        width: 100%;
+        margin: 0 auto;
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .box {
+        display: flex;
+        flex-wrap: wrap;
+        background: #333E4A;
+        padding: 32px 24px;
+        height: auto;
+      }
+      .box > * {
+        width: 100%;
+      }
+      .box-content {
+        position: relative;
+        color: #fff;
+      }
+      .box-content::before {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 18px;
+        margin-bottom: 16px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMTgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+ICA8cGF0aCBkPSJNOS4yMTYgMS4wMDhDNy40ODggNC44IDYuNjI0IDcuNjU2IDYuNjI0IDkuNTc2cy43MiAzLjUwNCAyLjE2IDQuNzUyYy0uNTI4LjkxMi0xLjE0IDEuNjMyLTEuODM2IDIuMTYtLjY5Ni41MjgtMS41NzIuNzkyLTIuNjI4Ljc5Mi0xLjI5NiAwLTIuMzQtLjQ0NC0zLjEzMi0xLjMzMkMuMzk2IDE1LjA2IDAgMTMuOTQ0IDAgMTIuNmMwLTIuMTEyLjgxNi00LjQwNCAyLjQ0OC02Ljg3NkM0LjA4IDMuMjUyIDUuNTY4IDEuMzQ0IDYuOTEyIDBsMi4zMDQgMS4wMDh6bTExLjE2IDBjLTEuNzI4IDMuNzkyLTIuNTkyIDYuNjQ4LTIuNTkyIDguNTY4cy43MiAzLjUwNCAyLjE2IDQuNzUyYy0xLjA1NiAxLjk2OC0yLjU0NCAyLjk1Mi00LjQ2NCAyLjk1Mi0xLjI5NiAwLTIuMzQtLjQ0NC0zLjEzMi0xLjMzMi0uNzkyLS44ODgtMS4xODgtMi4wMDQtMS4xODgtMy4zNDggMC0yLjExMi44MTYtNC40MDQgMi40NDgtNi44NzYgMS42MzItMi40NzIgMy4xMi00LjM4IDQuNDY0LTUuNzI0bDIuMzA0IDEuMDA4eiIgZmlsbD0iIzA4RiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+);
+        background-repeat: no-repeat;
+      }
+      .box-content p {
+        margin-top: 0;
+        margin-bottom: 25px;
+        font-size: 200%;
+        line-height: 1.2;
+      }
+      .box-footer {
+        margin-top: 20px;
+      }
+      .box-footer a {
+        font-weight: 700;
+        color: #55FBDC;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: -0.1px;
+      }
+      .twitter-share-button:hover path {
+        fill: #fff;
+      }
+      @media (max-width: 641px) {
+        .lead {
+          /* font-size: 12px; */
+          padding-left: 22px;
+          padding-right: 22px;
+        }
+      }
+
+      .options {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+
+      .options p {margin-top: 5px}
+
+      .btn {
+        color: rgba(136, 155, 176, 0.5);
+        background: rgba(51, 62, 74, 0.5);
+        border-color: rgba(51, 62, 74, 0.5);
+        display: inline-block;
+        font-weight: 400;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        border: 1px solid transparent;
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        border-radius: .25rem;
+        transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+      }
+      .btn:hover {
+        color: rgba(136, 155, 176, 1);
+        background: rgba(51, 62, 74, 1);
+        border-color: rgba(51, 62, 74, 1);
+        text-decoration: none;
+      }
+      .btn:active {
+        padding-top: .39rem;
+        padding-bottom: .37rem;
+        text-decoration: none;
+      }
+
+      .d-flex {
+        display: -ms-flexbox!important;
+        display: flex!important;
+      }
+      .justify-content-between {
+        -ms-flex-pack: justify!important;
+        justify-content: space-between!important;
+      }
+    </style>
+    <script type="text/javascript">
+      function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+
+        return array;
+      }
+
+      var arr = [
+        "Can you restart your browser again?",
+        "Can you restart your phone for me?",
+        "Did you clear your cache?",
+        "Did you test it in Chrome?",
+        "Did you upgrade to the latest version?",
+        "Even though it doesn't work, how does it feel?",
+        "I can't test everything!",
+        "I haven't touched that module in weeks!",
+        "It must be a hardware problem!",
+        "It worked yesterday!",
+        "It works on my machine!",
+        "It works, but it hasn't been tested.",
+        "It's just some unlucky coincidence.",
+        "It's never done that before!",
+        "Oh boy! Are you still using Safari?",
+        "Oh... The framework we used don't support your browser!",
+        "Oh... We don't support that phone!",
+        "Somebody must have changed my code!",
+        "That's a bug in the browser! Google is working on that!",
+        "That's weird...",
+        "There has to be something funky in your data!",
+        "What did you type in wrong to get it to crash?",
+        "Where were you when the app blew up?",
+        "Why do you want to do it that way?",
+        "you can't use that version on your system.",
+        "You must have the wrong version!",
+        "This is a feature not a bug!",
+        "I think we deployed the wrong version!",
+        "This must be the CDN caching, let me purge it!"
+      ]
+    </script>
+  </head>
+  <body>
+    <section class="body-wrap">
+      <div class="container-sm">
+        <div class="text-center">
+          <h1>Geeky Answers</h1>
+          <p class="lead">Someone reported a in production after deployment & boss is angry? <br>No problem, We Got Ya!</p>
+        </div>
+        <div class="box">
+          <div class="box-content">
+            <p class="responsive_headline">You must have the wrong version!</p>
+          </div>
+          <div class="d-flex justify-content-between box-footer">
+            <a href="https://www.facebook.com/groups/egyptian.geeks/" target="_blank">@EgyptianGeeks</a>
+            <a class="twitter-share-button"
+              href="https://twitter.com/intent/tweet?text=You must have the wrong version!&via=MohammedAlaa&hashtags=GeekyAnswers">
+              <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                  <path fill="#889BB0" d="M6,5.75L10.25,10H7V16H13.5L15.5,18H7A2,2 0 0,1 5,16V10H1.75L6,5.75M18,18.25L13.75,14H17V8H10.5L8.5,6H17A2,2 0 0,1 19,8V14H22.25L18,18.25Z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="options text-center">
+          Please refresh to see more answers!
+          <p><a class="btn" href="https://twitter.com/intent/tweet?screen_name=MohammedAlaa&amp;text=Please%20add%20%22GEEKYEXECUSE%22%20to%20GeekyAnswers" data-related="MohammedAlaa,MohammedAlaa">Feeling lucky!</a></p>
+        </div>
+      </div>
+    </section>
+
+    <script src="src/js/fittext.js"></script>
+    <script type="text/javascript">
+      (function() {
+        if (window.__twitterIntentHandler) return;
+        var intentRegex = /twitter\.com\/intent\/(\w+)/,
+            windowOptions = 'scrollbars=yes,resizable=yes,toolbar=no,location=yes',
+            width = 550,
+            height = 420,
+            winHeight = screen.height,
+            winWidth = screen.width;
+
+        function handleIntent(e) {
+          e = e || window.event;
+          var target = e.target || e.srcElement,
+              m, left, top;
+
+          while (target && target.nodeName.toLowerCase() !== 'a') {
+            target = target.parentNode;
+          }
+
+          if (target && target.nodeName.toLowerCase() === 'a' && target.href) {
+            m = target.href.match(intentRegex);
+            if (m) {
+              left = Math.round((winWidth / 2) - (width / 2));
+              top = 0;
+
+              if (winHeight > height) {
+                top = Math.round((winHeight / 2) - (height / 2));
+              }
+
+              window.open(target.href, 'intent', windowOptions + ',width=' + width +
+                                                 ',height=' + height + ',left=' + left + ',top=' + top);
+              e.returnValue = false;
+              e.preventDefault && e.preventDefault();
+            }
+          }
+        }
+
+        if (document.addEventListener) {
+          document.addEventListener('click', handleIntent, false);
+        } else if (document.attachEvent) {
+          document.attachEvent('onclick', handleIntent);
+        }
+        window.__twitterIntentHandler = true;
+      }());
+
+      var item = document.querySelector('.responsive_headline');
+      var answer = shuffle(arr)[0];
+      var tweet_btn = document.querySelector('.twitter-share-button');
+      item.innerText = answer;
+
+      tweet_btn.href = "https://twitter.com/intent/tweet?text="+ encodeURI(answer) +"&via=MohammedAlaa&hashtags=GeekyAnswers";
+
+      fitText(document.querySelector(".responsive_headline"), 0.9);
+    </script>
+  </body>
+</html>
